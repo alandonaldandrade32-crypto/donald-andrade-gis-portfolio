@@ -92,7 +92,6 @@ print("Processing complete.")
 - Output standardization for multiple datasets
 - Validation-ready GIS outputs for field comparison
 
-📂 Script available in `/scripts`
 
 ---
 

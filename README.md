@@ -1,7 +1,18 @@
-# donald-andrade-gis-portfolio
-GIS &amp; Remote Sensing portfolio – thematic mapping, spatial analysis, and Python (ArcPy) automation.
-# GIS & Remote Sensing Portfolio – Donald Andrade
-
+donald-andrade-gis-portfolio/
+│
+├── maps/
+│   ├── slope_map.png
+│   ├── soil_map.png
+│   ├── erosion_map.png
+│
+├── scripts/
+│   ├── raster_processing.py
+│   ├── batch_clip.py
+│
+├── docs/
+│   ├── watershed_project.pdf
+│
+└── README.md
 ## Overview
 This repository showcases my practical experience in GIS, remote sensing, and spatial data processing, including thematic map production and Python (ArcPy) automation workflows.
 

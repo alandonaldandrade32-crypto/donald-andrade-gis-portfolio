@@ -36,6 +36,9 @@ ArcGIS Pro
 ### Erosion Map
 ![Erosion Map](maps/HAN_5b03_Erosion.jpg)
 
+## Texture Map
+![Texture Map(maps/HAN_5b03_Texture.jpg)
+
 ---
 
 ## 🧠 GIS Automation (Python – ArcPy)

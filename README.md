@@ -14,50 +14,75 @@ donald-andrade-gis-portfolio/
 │
 └── README.md
 ## Overview
-This repository showcases my practical experience in GIS, remote sensing, and spatial data processing, including thematic map production and Python (ArcPy) automation workflows.
+# GIS & Remote Sensing Portfolio – Donald Andrade
 
-I have worked on real-world geospatial projects involving watershed analysis, soil data processing, and environmental mapping.
+## Overview
+This portfolio demonstrates my experience in GIS, remote sensing, and spatial data processing, with a focus on environmental analysis and workflow automation using Python (ArcPy).
 
-## Key Projects
+I am particularly interested in applying geospatial data to real-world environmental and agricultural problems.
 
-### Land Suitability Mapping (Micro-Watershed)
-- Produced 40+ thematic maps for watershed-level analysis
-- Classification: S1 (Highly Suitable), S2 (Moderately Suitable), S3 (Marginally Suitable)
-- Parameters: soil properties, slope, texture
-- Tools: ArcGIS Pro
+---
 
-### GIS Data Processing & Automation
-- Developed Python (ArcPy) scripts for:
-  - Batch raster processing
-  - Spatial data cleaning and validation
-  - Attribute extraction and workflow automation
+## Key Project: Land Suitability Mapping (Micro-Watershed)
 
-### Master’s Thesis (Ongoing)
+### Description
+Developed a land suitability model using multiple environmental parameters to support watershed-level decision-making.
+
+### Methodology
+- Integrated soil, slope, and texture datasets
+- Classified land into suitability classes:
+  - S1: Highly Suitable
+  - S2: Moderately Suitable
+  - S3: Marginally Suitable
+- Generated 40+ thematic maps
+
+### Tools
+ArcGIS Pro
+
+---
+
+## Sample Maps
+
+### Slope Map
+![Slope Map](maps/HAN_5b03_Slope.jpg)
+
+### Soil Map
+![Soil Map](maps/HAN_5b03_Soils.jpg)
+
+### Erosion Map
+![Erosion Map](maps/HAN_5b03_Erosion.jpg)
+
+---
+
+## GIS Automation (Python – ArcPy)
+
+Example workflows:
+- Batch raster processing
+- Automated clipping and extraction
+- Data cleaning and validation
+
+(Scripts available in /scripts)
+
+---
+
+## Master’s Thesis (Ongoing)
+
 **Field Phenotyping of Buckwheat using UAV, Fluorescence, and LAI Modelling**
-- Integration of UAV imagery with ground-based measurements
-- Multi-date dataset analysis
-- Comparison of modeled (SCOPE LAI) and observed parameters
+
+- Integration of UAV imagery with field measurements
+- Multi-temporal dataset analysis
+- Comparison of modeled vs observed LAI
 
 ---
 
 ## Tools & Technologies
-- GIS: ArcGIS Pro, QGIS, SNAP, ERDAS Imagine  
-- Programming: Python (ArcPy)  
-- Data Handling: Spatial data processing, QA/QC, multi-source integration  
-- Database: Basic SQL, R (analysis)
+- GIS: ArcGIS Pro, QGIS, SNAP
+- Programming: Python (ArcPy)
+- Data: Raster processing, spatial analysis
+- Database: Basic SQL, R
 
-## Professional Experience
-**Project Assistant (GIS)**  
-University of Agricultural Sciences, Bengaluru  
-- GIS data processing for soil and watershed datasets  
-- Map production and spatial analysis  
-- Automation of workflows using Python (ArcPy)  
-
-## Portfolio Contents
-- `maps/` → Selected GIS maps (PDF format)  
-- `scripts/` → Python (ArcPy) automation scripts  
-- `docs/` → Project descriptions  
+---
 
 ## Contact
-📧 Email: donaldandrade04@gmail.com  
-📍 Location: Poznań, Poland
+Email: donaldandrade04@gmail.com  
+Location: Poznań, Poland

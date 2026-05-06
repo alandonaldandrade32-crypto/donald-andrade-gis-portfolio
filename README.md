@@ -43,7 +43,35 @@ ArcGIS Pro
 ![Map Catalog](11.appenahalli_English_Compressed.pdf)
 
 ## 🧠 GIS Automation (Python – ArcPy)
+import arcpy
+import os
 
+# Input folder containing raster files
+input_folder = r"C:\GIS\rasters"
+output_folder = r"C:\GIS\output"
+
+arcpy.env.workspace = input_folder
+arcpy.env.overwriteOutput = True
+
+rasters = arcpy.ListRasters()
+
+for raster in rasters:
+    try:
+        print(f"Processing: {raster}")
+
+        # Example: slope calculation (Spatial Analyst required)
+        slope = arcpy.sa.Slope(raster)
+
+        output_path = os.path.join(output_folder, f"slope_{raster}")
+
+        slope.save(output_path)
+
+        print(f"Saved: {output_path}")
+
+    except Exception as e:
+        print(f"Failed on {raster}: {e}")
+
+print("Processing complete.")
 ### Workflows
 - Batch raster processing
 - Automated clipping and extraction

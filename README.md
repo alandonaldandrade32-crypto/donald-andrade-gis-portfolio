@@ -1,19 +1,3 @@
-donald-andrade-gis-portfolio/
-│
-├── maps/
-│   ├── slope_map.png
-│   ├── soil_map.png
-│   ├── erosion_map.png
-│
-├── scripts/
-│   ├── raster_processing.py
-│   ├── batch_clip.py
-│
-├── docs/
-│   ├── watershed_project.pdf
-│
-└── README.md
-## Overview
 # GIS & Remote Sensing Portfolio – Donald Andrade
 
 ## Overview
@@ -23,7 +7,7 @@ I am particularly interested in applying geospatial data to real-world environme
 
 ---
 
-## Key Project: Land Suitability Mapping (Micro-Watershed)
+## 🗺️ Key Project: Land Suitability Mapping (Micro-Watershed)
 
 ### Description
 Developed a land suitability model using multiple environmental parameters to support watershed-level decision-making.
@@ -41,7 +25,7 @@ ArcGIS Pro
 
 ---
 
-## Sample Maps
+## 📍 Sample Maps
 
 ### Slope Map
 ![Slope Map](maps/HAN_5b03_Slope.jpg)
@@ -54,18 +38,18 @@ ArcGIS Pro
 
 ---
 
-## GIS Automation (Python – ArcPy)
+## 🧠 GIS Automation (Python – ArcPy)
 
-Example workflows:
+### Workflows
 - Batch raster processing
 - Automated clipping and extraction
 - Data cleaning and validation
 
-(Scripts available in /scripts)
+📂 Scripts available in `/scripts`
 
 ---
 
-## Master’s Thesis (Ongoing)
+## 🎓 Master’s Thesis (Ongoing)
 
 **Field Phenotyping of Buckwheat using UAV, Fluorescence, and LAI Modelling**
 
@@ -75,14 +59,14 @@ Example workflows:
 
 ---
 
-## Tools & Technologies
-- GIS: ArcGIS Pro, QGIS, SNAP
-- Programming: Python (ArcPy)
-- Data: Raster processing, spatial analysis
-- Database: Basic SQL, R
+## 🛠️ Tools & Technologies
+- GIS: ArcGIS Pro, QGIS, SNAP, ERDAS Imagine  
+- Programming: Python (ArcPy)  
+- Data Processing: Raster analysis, spatial workflows  
+- Other: Basic SQL, R
 
 ---
 
-## Contact
+## 📬 Contact
 Email: donaldandrade04@gmail.com  
 Location: Poznań, Poland

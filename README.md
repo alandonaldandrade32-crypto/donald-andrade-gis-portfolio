@@ -53,38 +53,85 @@ A compiled GIS atlas containing all thematic maps used in this watershed analysi
 
 The following script automates batch raster processing using ArcPy.
 
-```python
 import arcpy
 import os
 
-# Input folder containing raster files
-input_folder = r"C:\GIS\rasters"
-output_folder = r"C:\GIS\output"
+# ----------------------------
+# INPUT DATA
+# ----------------------------
+satellite_raster = r"C:\GIS\input\satellite.tif"
+soil_polygons = r"C:\GIS\input\soil_zones.shp"
+field_points = r"C:\GIS\input\field_samples.shp"
 
-arcpy.env.workspace = input_folder
+output_gdb = r"C:\GIS\output\project.gdb"
+
+arcpy.env.workspace = output_gdb
 arcpy.env.overwriteOutput = True
 
-rasters = arcpy.ListRasters()
+# ----------------------------
+# STEP 1: ZONE GENERATION FROM SATELLITE IMAGE
+# (example: unsupervised classification or raster reclassification)
+# ----------------------------
 
-for raster in rasters:
-    try:
-        print(f"Processing: {raster}")
+classified_raster = os.path.join(output_gdb, "soil_zones_raster")
 
-        # Slope calculation (Spatial Analyst required)
-        slope = arcpy.sa.Slope(raster)
+# Example placeholder: reclassify or segmentation output
+# (Assumes raster is already prepared or classified in ArcGIS tools)
+arcpy.sa.Reclassify(
+    satellite_raster,
+    "Value",
+    arcpy.sa.RemapRange([[0, 50, 1], [50, 100, 2], [100, 150, 3]])
+).save(classified_raster)
 
-        output_path = os.path.join(output_folder, f"slope_{raster}")
+print("Satellite zones created")
 
-        slope.save(output_path)
+# ----------------------------
+# STEP 2: CONVERT RASTER ZONES TO POLYGONS
+# ----------------------------
 
-        print(f"Saved: {output_path}")
+zone_polygons = os.path.join(output_gdb, "soil_zones_poly")
 
-    except Exception as e:
-        print(f"Failed on {raster}: {e}")
+arcpy.conversion.RasterToPolygon(
+    classified_raster,
+    zone_polygons,
+    "NO_SIMPLIFY",
+    "Value"
+)
 
-print("Processing complete.")
-```
+print("Raster converted to polygons")
 
+# ----------------------------
+# STEP 3: JOIN FIELD DATA TO ZONES
+# ----------------------------
+
+zone_with_fields = os.path.join(output_gdb, "zones_with_field_data")
+
+arcpy.analysis.SpatialJoin(
+    zone_polygons,
+    field_points,
+    zone_with_fields,
+    join_type="KEEP_ALL",
+    match_option="INTERSECT"
+)
+
+print("Field data joined to zones")
+
+# ----------------------------
+# STEP 4: ZONE STATISTICS (VALIDATION STEP)
+# ----------------------------
+
+stats_table = os.path.join(output_gdb, "zone_statistics")
+
+arcpy.sa.ZonalStatisticsAsTable(
+    zone_polygons,
+    "gridcode",
+    satellite_raster,
+    stats_table,
+    "DATA",
+    "MEAN"
+)
+
+print("Zone statistics calculated")
 ### Workflows
 - Batch raster processing
 - Automated spatial analysis

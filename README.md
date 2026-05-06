@@ -13,12 +13,12 @@ I am particularly interested in applying geospatial data to real-world environme
 Developed a land suitability model using multiple environmental parameters to support watershed-level decision-making.
 
 ### Methodology
-- Integrated soil, slope, and texture datasets
+- Integrated soil, slope, texture, and terrain datasets
 - Classified land into suitability classes:
   - S1: Highly Suitable
   - S2: Moderately Suitable
   - S3: Marginally Suitable
-- Generated 40+ thematic maps
+- Produced multiple thematic GIS maps
 
 ### Tools
 ArcGIS Pro
@@ -28,21 +28,32 @@ ArcGIS Pro
 ## 📍 Sample Maps
 
 ### Slope Map
-![Slope Map](HAN_5b03_Slope.jpg)
+![Slope Map](maps/slope.jpg)
 
 ### Soil Map
-![Soil Map](HAN_5b03_Soils.jpg)
+![Soil Map](maps/soil.jpg)
 
 ### Erosion Map
-![Erosion Map](HAN_5b03_Erosion.jpg)
+![Erosion Map](maps/erosion.jpg)
 
 ### Texture Map
-![Texture Map](HAN_5b03_Textute.jpg)
+![Texture Map](maps/texture.jpg)
 
-###Maps catlog 
-![Map Catalog](11.appenahalli_English_Compressed.pdf)
+---
+
+## 📊 Map Catalogue
+
+A compiled GIS atlas containing all thematic maps used in this watershed analysis project.
+
+📄 [View Map Catalogue](docs/map_catalog.pdf)
+
+---
 
 ## 🧠 GIS Automation (Python – ArcPy)
+
+The following script automates batch raster processing using ArcPy.
+
+```python
 import arcpy
 import os
 
@@ -59,7 +70,7 @@ for raster in rasters:
     try:
         print(f"Processing: {raster}")
 
-        # Example: slope calculation (Spatial Analyst required)
+        # Slope calculation (Spatial Analyst required)
         slope = arcpy.sa.Slope(raster)
 
         output_path = os.path.join(output_folder, f"slope_{raster}")
@@ -72,12 +83,14 @@ for raster in rasters:
         print(f"Failed on {raster}: {e}")
 
 print("Processing complete.")
+```
+
 ### Workflows
 - Batch raster processing
-- Automated clipping and extraction
+- Automated spatial analysis
 - Data cleaning and validation
 
-📂 Scripts available in `/scripts`
+📂 Script available in `/scripts`
 
 ---
 
@@ -94,8 +107,8 @@ print("Processing complete.")
 ## 🛠️ Tools & Technologies
 - GIS: ArcGIS Pro, QGIS, SNAP, ERDAS Imagine  
 - Programming: Python (ArcPy)  
-- Data Processing: Raster analysis, spatial workflows  
-- Other: Basic SQL, R
+- Spatial Analysis: Raster processing, classification, mapping  
+- Data Handling: SQL basics, R
 
 ---
 

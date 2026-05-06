@@ -1,3 +1,18 @@
+donald-andrade-gis-portfolio/
+│
+├── maps/
+│   ├── slope.jpg
+│   ├── soil.jpg
+│   ├── erosion.jpg
+│   ├── texture.jpg
+│
+├── docs/
+│   ├── map_catalog.pdf
+│
+├── scripts/
+│   ├── arcpy_batch_processing.py
+│
+└── README.md
 # GIS & Remote Sensing Portfolio – Donald Andrade
 
 ## Overview

@@ -40,6 +40,9 @@ ArcGIS Pro
 
 ---
 
+## 📄 Map Catalogue
+[View Map Catalogue (PDF)](11.%20Appenahalli%20English_compressed.pdf)
+
 ## 🐍 GIS Automation Scripts (Python – ArcPy)
 
 Automated raster processing workflows built with ArcPy. Scripts are in the [`scripts/`](scripts/) folder.

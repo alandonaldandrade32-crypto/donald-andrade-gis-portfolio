@@ -6,7 +6,7 @@ This portfolio demonstrates my experience in GIS, remote sensing, and spatial da
 
 ---
 
-## 🗺️ Project: Land Suitability Mapping (Micro-Watershed, India)
+## Project: Land Suitability Mapping (Micro-Watershed, India)
 
 ### Description
 Developed a multi-criteria land suitability model to support watershed-level land management decisions. The study area is a micro-watershed in Karnataka, India.
@@ -43,7 +43,7 @@ ArcGIS Pro
 ## 📄 Map Catalogue
 [View Map Catalogue (PDF)](11.%20Appenahalli%20English_compressed.pdf)
 
-## 🐍 GIS Automation Scripts (Python – ArcPy)
+##  GIS Automation Scripts (Python – ArcPy)
 
 Automated raster processing workflows built with ArcPy. Scripts are available in the repository root.
 
@@ -55,7 +55,7 @@ Automated raster processing workflows built with ArcPy. Scripts are available in
 
 ---
 
-## 🎓 Master's Thesis (Ongoing)
+## Master's Thesis (Ongoing)
 
 **Field Phenotyping of Buckwheat using UAV Imagery, Fluorescence, and LAI Modelling**
 *Poznań University of Life Sciences, 2025–2026*

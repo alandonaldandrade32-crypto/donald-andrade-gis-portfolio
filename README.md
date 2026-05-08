@@ -43,15 +43,14 @@ ArcGIS Pro
 ## 📄 Map Catalogue
 [View Map Catalogue (PDF)](11.%20Appenahalli%20English_compressed.pdf)
 
-##  GIS Automation Scripts (Python – ArcPy)
-
+## 🐍 GIS Automation Scripts (Python – ArcPy)
 Automated raster processing workflows built with ArcPy. Scripts are available in the repository root.
 
 | Script | Description |
 |--------|-------------|
-| `batch_slope.py` | Batch slope calculation from multiple raster inputs |
-| `ndvi_calculation.py` | NDVI computation from multispectral raster bands |
-| `clip_rasters.py` | Batch clip rasters to a study area boundary |
+| [batch_slope.py](batch_slope.py) | Batch slope calculation from multiple raster inputs |
+| [ndvi_calculation.py](ndvi_calculation.py) | NDVI computation from multispectral raster bands |
+| [clip_rasters.py](clip_rasters.py) | Batch clip rasters to a study area boundary |
 
 ---
 

@@ -44,7 +44,7 @@ ArcGIS Pro
 [View Map Catalogue (PDF)](11.%20Appenahalli%20English_compressed.pdf)
 
 ## 🐍 GIS Automation Scripts (Python – ArcPy)
-Automated raster processing workflows built with ArcPy. Scripts are available in the repository root.
+Automated raster processing workflows built with ArcPy. 
 
 | Script | Description |
 |--------|-------------|

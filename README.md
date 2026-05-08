@@ -45,7 +45,7 @@ ArcGIS Pro
 
 ## 🐍 GIS Automation Scripts (Python – ArcPy)
 
-Automated raster processing workflows built with ArcPy. Scripts are in the [`scripts/`](scripts/) folder.
+Automated raster processing workflows built with ArcPy. Scripts are available in the repository root.
 
 | Script | Description |
 |--------|-------------|
